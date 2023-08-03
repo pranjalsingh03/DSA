@@ -3,5 +3,7 @@
 using namespace std;
 
 int main(){
-    cout<<"first program";
+    int a=10;
+
+    cout<<"first program"<<a;
 }
