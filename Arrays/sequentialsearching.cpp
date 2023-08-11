@@ -15,11 +15,17 @@ int main(){
     for(i=0;i<n;i++){
     if (arr[i]==k)
     {
-        cout<<"resut found"<<i;
+        cout<<k<<" Resut found at position "<<i;
         return 0;
     }
-    cout<<k<<"Not found";
+    }
+    if(arr[i]==k){
+        cout<<k<<" Resut found at position "<<i;
+    }
+    else{
+    cout<<k<<" Not found";
+    }
     return 0;
     
-    }
+    
 }
