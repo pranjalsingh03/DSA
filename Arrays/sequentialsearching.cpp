@@ -18,14 +18,9 @@ int main(){
         cout<<k<<" Resut found at position "<<i;
         return 0;
     }
-    }
-    if(arr[i]==k){
-        cout<<k<<" Resut found at position "<<i;
-    }
     else{
     cout<<k<<" Not found";
     }
     return 0;
-    
-    
+}
 }
