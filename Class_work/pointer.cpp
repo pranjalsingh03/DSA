@@ -7,7 +7,7 @@ class Test{
         cout<<"Object created for Test"<<endl;
     }
     void show(){
-        cout<<"Value of a :"<<endl;
+        cout<<"Value of a :"<<a<<endl;
     }
 };
 
