@@ -15,18 +15,18 @@ int main(){
     // fout<<"Washington\n";
     // fout<<"Londan\n";
 
-    const int n=80;
+    const int n=20;
     char s[n];
     ifstream fin;
     fin.open("country.txt");
-    while (fin)
+    while (fin.eof()==0)
     {
         fin.getline(s,n);
         cout<<s<<endl;
     }
     fin.close();
     fin.open("capital.txt");
-    while (fin)
+    while (fin.eof()==0)
     {
         fin.getline(s,n);
         cout<<s<<endl;
