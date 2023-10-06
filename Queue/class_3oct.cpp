@@ -33,8 +33,7 @@ public:
         else
         {
             Node *current = front;
-            while (current->next != NULL &&
-                   current->next->priority >= priority)
+            while (current->next != NULL && current->next->priority >= priority)
             {
                 current = current->next;
             }
