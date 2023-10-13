@@ -1,5 +1,33 @@
 #include <iostream>
+
 using namespace std;
+
+int n;
+
+void mergesort(int[], int, int);
+void merge(int[], int, int, int);
+void display(int[], int);
+
+int main()
+{
+    cout << "Enter no. of elements: ";
+    cin >> n;
+    int a[n];
+    cout << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Enter element a[" << i << "]: ";
+        cin >> a[i];
+    }
+    cout << "\nOriginal array: ";
+    display(a, n);
+    cout << endl;
+    mergesort(a, 0, n - 1);
+    cout << "\nSorted array: ";
+    display(a, n);
+    cout << endl;
+    return 0;
+}
 
 void mergesort(int a[], int low, int high)
 {
@@ -15,8 +43,10 @@ void mergesort(int a[], int low, int high)
 
 void merge(int a[], int beg, int mid, int last)
 {
-    int lindex, tempindex, rindex, temp[n] lindex = beg;
-    rindex = mid + 1 tempindex = beg;
+    int lindex, temp[n], tempindex, rindex;
+    lindex = beg;
+    rindex = mid + 1;
+    tempindex = beg;
     while ((lindex <= mid) && (rindex <= last))
     {
         if (a[lindex] < a[rindex])
@@ -51,22 +81,4 @@ void display(int a[], int size)
     {
         cout << a[i] << " ";
     }
-}
-
-int main()
-{
-    int a, b, n, arr[n];
-    cout << "Enter the number of elements ";
-    cin >> n;
-    for (int i = 0; i < n; i++)
-    {
-        cin << arr[i];
-    }
-    cout << "\nOriginal array: ";
-    display(a, n);
-    cout << endl;
-    mergesort(a, 0, n - 1);
-    cout << "\nSorted array: ";
-    display(a, n);
-    cout << endl;
 }
