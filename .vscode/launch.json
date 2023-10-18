@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "p:/DSA/Stack",
-      "program": "p:/DSA/Stack/build/Debug/outDebug",
+      "cwd": "p:/DSA/Graph",
+      "program": "p:/DSA/Graph/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
