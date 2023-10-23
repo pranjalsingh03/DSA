@@ -3,43 +3,43 @@
 
 using namespace std;
 
-// int partition(vector<int>& arr, int low, int high) {
-//     int pivot = arr[high];
-//     int i = low - 1;
-//     for (int j = low; j < high; j++) {
-//         if (arr[j] < pivot) {
-//             i++;
-//             swap(arr[i], arr[j]);
-//         }
-//     }
-//     swap(arr[i+1], arr[high]);
-//     return i+1;
-// }
-
-int partition(int arr[],int low,int high){
-    int pivot=arr[low];
-    int i=low+1;
-    int j=high;
-    while (true)
-    {
-        while (arr[i]<=pivot)
-        {
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high];
+    int i = low - 1;
+    for (int j = low; j < high; j++) {
+        if (arr[j] < pivot) {
             i++;
-        }a
-        while (arr[j]>pivot)
-        {
-            j--;
-        }
-        if(i<j){
-            swap(arr[i],arr[j]);
-        }
-        else{
-            swap(arr[low],arr[j]);
-            return j;
+            swap(arr[i], arr[j]);
         }
     }
-    
+    swap(arr[i+1], arr[high]);
+    return i+1;
 }
+
+// int partition(int arr[],int low,int high){
+//     int pivot=arr[low];
+//     int i=low+1;
+//     int j=high;
+//     while (true)
+//     {
+//         while (arr[i]<=pivot)
+//         {
+//             i++;
+//         }
+//         while (arr[j]>pivot)
+//         {
+//             j--;
+//         }
+//         if(i<j){
+//             swap(arr[i],arr[j]);
+//         }
+//         else{
+//             swap(arr[low],arr[j]);
+//             return j;
+//         }
+//     }
+    
+// }
 
 void quickSort(int arr[], int low, int high) {
     if (low < high) {
