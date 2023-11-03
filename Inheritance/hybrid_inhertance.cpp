@@ -1,4 +1,5 @@
-*#include<iostream> using namespace std;
+#include<iostream>
+using namespace std;
 
 class Student
 {
@@ -23,7 +24,6 @@ public:
     {
         sub1 = s1;
         sub2 = s2;
-        /
     }
 };
 
