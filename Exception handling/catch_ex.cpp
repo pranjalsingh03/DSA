@@ -8,16 +8,9 @@ void test(int x){
         else if(x==-1) throw 1.0;
         cout<<"End of try block"<<endl;
     }
-    catch(char c){
-        cout<<"Caught a character"<<endl;
+    catch(...){
+        cout<<"Caught an exception"<<endl;
     }
-    catch(int m){
-        cout<<"Caught an integer"<<endl;
-    }
-    catch(double d){
-        cout<<"Caught a double"<<endl;
-    }
-    cout<<"End of try-catch system"<<endl;
 }
 
 int main(){
